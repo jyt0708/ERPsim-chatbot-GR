@@ -1,0 +1,261 @@
+# Stock/Inventory Report
+- The stock/inventory report is a summary of the stock situation for all your products, it is always up to date. 
+- Each time production for a given product is confirmed, the inventory of the finished product goes up. Each time a sale is processed the inventory goes down accordingly.
+- The stock/inventory report is useful in helping you to prioritize what to produce next. Items out of stock or with low stock should be produced first.
+- The stock/inventory report also provides information about raw material stocks, so you can know when you have the necessary amounts available to  release production orders.
+- In addition to the material stock listing, a Warehouse Capacity block is also included in the stock/inventory report. This block shows the capacity of the main warehouse by material type as well use the total quantity of materials on hand for that type. You can see how much of your storage capacity is in use at a glance.
+
+
+# Stock/Inventory Report Column Descriptions
+- SLoc (Storage Location): a storage location is a logical grouping of materials, used to manage inventory. In the manufacturing game there are 5 storage locations: 
+	- 02: For finished goods in your main warehouse.
+	- 02N, 02S, 02W: For finished goods in your regional distribution centers in 	the North, South and West respectively.
+	- 88: For raw materials, both food and packaging in your main warehouse.
+- Material: The SAP code for the material. $$-F## for finished goods, $$-P## for packing raw materials, and $$-R## for food raw materials.
+- Description: Name of the material.
+- Stock: The quantity on hand of the associated material in the associated storage location.
+- Reserved: Applies to raw materials only. It is the portion of the on hand quantity of material that is held aside for in-process production orders. Only unreserved stock can be used (and therefore also become reserved) to create other production orders.
+- Unit: The base unit of measure for the material – it allows you to make sense of the Stock and Reserved quantities. For food raw materials, the unit is kilograms (KG). For all other materials the unit is pieces (ST) – a straight count of items. Note that the weight of the finished goods is not used for counting inventory.
+
+
+# Change Price List
+In the simulation, we only use price list conditions, so you must specify a sales price condition record for each finished product that you wish to sell to every distribution channel.
+
+
+# Steps to Change Price List
+1. After running VK32 – Change Price List you will see the “Change Condition Records” screen, with several folders.
+2. Open the “Prices” folder by clicking on the small triangle to the left of it.
+3. Double click on the “Price List” item. A selection screen appears.
+4. Enter the values for the DC(s) that you wish to edit. Enter 12.
+5. Click Execute. The list of products and prices appears. Depending on which DC(s) you entered, you will see products only relevant to that DC. 
+6. Edit the prices in the Amount column.
+7. Click Save. The screen closes and a confirmation message appears.
+
+
+# Marketing Expense Planning
+- You may change your marketing budget at any point in time in the game.
+- You can specify any amount (in whole Euros, no cents) for each of the 12 products in each of the 3 geographic regions – this is the amount that will be spent PER DAY.
+- When you enter in this transaction, you will see that current amounts you are spending each day. You will continue to spend these amounts every day until you change them. To stop spending, or to more quickly change your whole marketing budget, you can click on Clear to reset all the values in the grid to zero. Clearing does NOT save. After clearing you must click on Save to record your decision to stop spending money on marketing.
+
+
+# Steps to Plan Marketing Expense
+1. After running ZADS – Marketing Expense Planning you will see the “Marketing Expense Planning” screen, with a 12x3 grid layout.
+2. In each of the cells of the grid, enter the amount that you would like to spend on marketing each day, for the associated product (row) and geographic region (column). You do not need to enter 0 where you do not wish to spend anything – 
+you can leave the cells blank.
+3. Press the Enter key. Under the grid, the Daily Total will update to reflect what your total daily spend will be. Verify that this amount is in line with your overall budget and strategy.
+4. Click Save. A confirmation message appears.
+
+
+# Summary Sales Report
+The summary sales report gives you an overview of your sales each day, broken down by product. This report is extremely helpful, as it tells you how often each product is being ordered, as well as a feel for the profitability of each product – the revenues less the cost of goods sold. Your best products are the ones that are being ordered often (preferably several times a day, every day) that bring a lot of revenue for little cost. You may be tempted to only look at the quantity sold. It is easy to sell a lot of product by lowering your price, but you will not generate a lot of profit. Focus on maximizing revenues and profit, not quantity sold.
+
+
+# Summary Sales Order Report Column Descriptions
+- Rnd: The simulation round in which the sales were recorded.
+- Day: The simulation day on which the sales were recorded.
+- Material: The SAP code for the product.
+- Description: The name of the product.
+- Orders: The number of orders that included the product, on a given day. 
+- Qty: The total number of boxes of cereal ordered for that product on a given day.
+- Value: The total revenue earned for that product on a given day.
+- Cost: The value of the inventory that was sold for that product on a given day – cost of goods sold.
+
+
+# Detailed Sales Report
+The detailed sales report displays every product ordered for every sale. Most importantly, it has information about the 3 geographic regions and the 3 customer types (DC). Use the summary sales report to guide your overall pricing and marketing strategy. Use this detailed sales report to fine tune your marketing budget across the geographic regions and pricing decisions across the customer types.
+
+
+# Detailed Sales Order Report Column Descriptions
+- Rnd: The simulation round in which the sales were recorded.
+- Day: The simulation day on which the sales were recorded.
+- Area: The geographic region the customer is in – North (NO), South (SO) or West (WE).
+- DC: The type of customer – hypermarket (10), grocery store (12) or corner store (14).
+- Material: The SAP code for the product.
+- Description: The name of the product.
+- Price: The unit price that the product was sold for.
+- Qty: The number of units sold.
+Value: The revenue earned by the sale of that product (Qty X Price).
+- Cost: The value of the inventory that was sold – cost of goods sold (Qty X Standard Price).
+
+
+# Price Market Report
+- The price market report shows you information about the industry as a whole. While you cannot see individual details about each company’s sales, it will show you the total sales by region for each product. You can use this information to get a sense of how much of the potential market you are capturing.
+- This report only updates every five days, showing aggregate information for the whole 5-day period. Only the most recent 20 days of information is retained, grouped into four 5-day periods.
+
+
+# Price Market Report Column Descriptions
+- Rnd/Day: The simulation round and day that is the last day of the reported period. For example, “02/10” means aggregated data from Round 2 for days 6 to 10 inclusive.
+- Material Description: The name of the product.
+- Area: The geographic region the customers are in – North (NO), South (SO) or West (WE).
+- Value: The total revenue earned from sales of that product in that area by all companies for the 5-day period.
+- Qty: The total units sold for sales of that product in that area by all companies for the 5-day period.
+- Price: The weighted average sales price (Value / Qty). Note that this is the average price of actual won sales. It is NOT the average ASKING price of all the companies. Any company who did not win any sales for the product/area because their price was too high, or had no stock available, will NOT affect the reported average price.
+
+
+# Planned Orders and Production Order
+- The production plan is captured by a set of Planned Orders documents. These can be converted into another document called a Production Order. 
+- The mapping is one for one. Each Planned Order becomes one and only one Production Order, and every Production Order must be created from a Planned Order.
+- You cannot create a Production Order unless sufficient unreserved raw materials are available. 
+- You can only add new orders to the back of the line, once a Production Order has been created and placed in the production queue, it cannot be removed or reprioritized. Therefore, don’t release too many orders too far in advance. You cannot change your mind and modify the production schedule.
+- Each Planned or Production Order is for a specific quantity of a single product. It represents a single production run. Several orders for the same product can be grouped together and processed one after another, thereby producing one long production campaign for the same product. This can be advantageous, because as you may recall, switching between products requires setup and cleaning time, and production output is lost.
+
+
+# Steps to Convert Planned Orders
+1. After entering the transaction, you will see a selection screen. The required values are already entered by default. Simply click Run selection to move to the next screen. A list of planned orders appears.
+2. From the list select one or more planned orders to convert. You select each row in the list by clicking in the empty space to the left of the first column. Once selected, the row will change colour.
+3. Click on Convert at the bottom of the screen. You will receive a confirmation that the selected planned orders were converted to production orders, and a green check mark will appear in front of the row.
+- Note: Do NOT deviate from the instructions above. Although you can edit some of the values in the columns, DON’T – you will just cause you and your team problems later 
+on.
+
+
+# Converting Planned Orders Troubleshooting
+The "Red X": You clicked on the Convert button, but instead of success this icon appears with an error message. First check whether you have enough unreserved raw materials on stock by checking your inventory report. There are other causes, and you can click on the Red X icon to see more detail about the error. If you are unable to understand what the error means, ask your instructor for help.
+
+
+# Production Schedule
+The productino scheule shows you information about all the production orders in your system. You can use this to keep track of which production runs have been completed already, and which production runs have yet to be produced. Use this report in conjunction with the inventory report to help you decide on the optimal sequence of production runs, such that you maintain the quantity of inventory for your products between the desired levels.
+
+
+# Production Schedule Report Column Descriptions
+- Order: The unique number assigned by the system to the production order.
+- Material Description: The name of the product produced.
+- Start: The simulation date on which the production run will start.
+- Finish: The simulation date on which the production run will complete.
+- Setup: The amount of time, in hours, that is needed to clean and reconfigure machines, before the production run could begin.
+- Released: The simulation date on which the production order was created.
+- Target: The number of units for the production run.
+- Confirmed: The number of units produced so far. If this number is zero, then no production has begun. If this number is greater than zero, but less than the target quantity, then this is the production order that is currently being processed.
+- Unit Cost: The cost of the raw materials consumed to produce one unit of the product.
+
+
+# Profitability Analysis
+- This table is one of the most important. For each of your products, you see two values: Variable and Variable + Fixed. The Variable value is the variable cost of producing each product; what it costs in raw materials to produce one unit of each product. This value is calculated from the BOM for each product, and the moving average cost you have paid for raw materials. In general, you should never price below this amount: you are guaranteed to make a loss if you do.
+- Not all costs are included: The report does not include marketing, warehousing and transportation costs. Those costs are irregular and difficult to predict since they depend on your actions which can vary widely. You need to price high enough to cover these additional costs also.
+- Breakeven: Pricing near Variable + Fixed isn’t going to secure you a profit. You will only break even, just covering your fixed overheads, and given that not all costs are included you are in fact, likely to be unprofitable.
+- Assumptions: In order to calculate a unit cost, the report has to divide total fixed costs by some quantity of product. It’s shown on the report as Allocation Basis. Where does this quantity come from? It’s based on your daily production capacity and a productivity assumption. This productivity assumption can be changed in the report, and so if you know your historical productivity, you can improve the accuracy of the cost estimate. However, this assumes that i) your future productivity will be the same as your past productivity, which means you will follow the same pattern of creating production orders, with the same frequency of setup delays and idle periods; and ii) you will sell everything you produce – this is a huge assumption; if you don’t sell everything then your margin earned by sales won’t be enough to cover your fixed costs.
+- Uniformity: You don’t need to, and nor should you, price your products with the same margins. Some products you will sell less of for a higher price, others more of for a lower price. Thinking uniformly about allocations of fixed costs can distort your thinking. You want to sell the products with the best margins, but once the market for those is saturated, you will need to consider other, less profitable products. Every sale above variable cost contributes to your margin, even if it is below “full cost”. If your best products are generating enough margin to cover your fixed costs and give you profit, why not sell another product even if it’s margin is low. This extra margin will add to your profit. Just be careful not to derail the sales of your best products. you have limited production capacity.
+
+
+# Planned Independent Requirements
+- This is where you enter your sales forecasts, known as planned independent requirements in SAP. The MRP will use these values as target inventory levels, generating a production plan for the shortfall between the Target values and the inventory & in-process production orders.
+- By default, a forecast equating to 2 days of production for each of the original 8 products is set (32,000 units for each products).
+
+
+# Steps to Create Planned Independent Requirements
+1. On the “Created Planned Independent Requirements: Initial Screen” enter the required selection filters. Select Product group option, and enter $$-F in the field to the right of this option.
+2. Press Enter. The “Plnd Ind. Reqmts Create: Planning Table” screen appears. The grid with products (material numbers) and columns with months is where you will enter and maintain your forecast.
+3. Enter your forecast values in the second column. This second column will correspond to the next month. Since you are forecasting for future sales we use this column instead of the current month. Since the real SAP system date and time will not move forward during the simulation, the future months will never approach, so don’t use the other columns either. Enter values into the second column only – do not use the other months.
+4. Click Save. A confirmation message appears, and you are returned back to the “Created Planned Independent Requirements: Initial Screen”.
+
+
+# MRP Run
+- To order more materials, you need to know how many kilograms of each material you need. That depends on 2 things – the finished product recipes and the number of finished products you plan to produce. Each of your products contains 30% of the key flavour ingredient, 35% oats and 35% wheat. So for 500g Nut Muesli you need 150g of nuts, 175g of oats and 175g of wheat for every unit to be produced. For the 1 kg version, you need 300g of nuts, 350g of oats and 350g of wheat per unit. You also need the correct size bag and box for each. While simple, this calculation is time consuming and you can imagine that for a company with thousands of materials and products, doing it by hand could take quite a while! Fortunately, the material requirements planning (MRP) function can do this calculation for you. You still need to determine how much of each product to produce though.
+- The MRP calculation process uses the planned independent requirements, available inventory counts, and in-process production orders to generate a new production plan (new planned orders). Along with this production plan, a dependent requirement is also created to support the new production plan, as well as Purchase Requisitions to meet these requirements.
+- After running the MRP, there is a section titled “Database Statistics”. Here you will see how many planned orders and purchase requisitions were created by the MRP process.
+
+
+# Steps to Run MRP 
+1. On the “MRP Run” initial screen, default values and settings have already been set for you. You do not need to enter anything.
+2. Press Enter. A warning message “Please check input parameters” appears. For most organizations with thousands of products, components and raw materials, running the MRP can be a lengthy process. Getting it wrong, means setting up a production and procurement plan that you don’t want. This is why the system asks you to verify the settings. Don’t worry, the correct ones are set for you – just don’t change them!
+3. Ignore the orange warnings. Press two more times on Enter.
+4. In the pop-up window, click on Continue. The MRP process runs, and a summary of the results appears.
+
+
+# Running MRP Troubleshooting
+- "No planned orders created": Check your planned independent requirements. Did you enter them in the second column before running the MRP? Look at your stock levels and in-process production orders. Do they exceed your sales forecast? In that case you didn’t need to generate a new production plan, since the inventory and in-process production to come will already give you enough stock to meet your sales target.
+- "No requisitions created": If the MRP didn’t generate any new planned orders, then there’s no need to procure any materials. If it did generate new planned orders, but still no requisitions then you already have enough materials on hand to support the new production plan. This can often happen if you updated your sales forecast, reducing the forecast for one product and increasing it for another might mean that 
+even though you intend to produce more of one product, the raw materials that were ordered for the other product that you will no longer produce can be used to produce the increased product.
+
+
+# Create Purchase Orders
+- The MRP process creates purchase requisitions, which are internal documents that signal the procurement department to evaluate different sources of supply, and then place the orders with a selected supplier. Since you only have one possible supplier of each raw material, the system is configured to have a fixed supplier for each material, and the MRP process automatically assigns the relevant supplier to each requisition when it creates them. To place orders with your suppliers, you simply need to convert the requisitions to purchase orders.
+- Prior to doing this you can still readjust your forecast and re-run the MRP if you change your mind. Once you create and send the purchase orders, you commit to 
+making the purchase. You cannot change your mind after the order is placed.
+- There is only need for one order per supplier. Not that the SAP term for a supplier is “Vendor”. For each purchase order created, one or more line items is attached with 
+the desired material and quantity. You must now wait for the order to be filled by the vendor, and the items to be received into your warehouse.
+
+
+Steps to Create Purchase Orders
+1. At the “Automatic Creation of Purchase Orders from Requisitions” selection screen, all the required fields are filled by default. You do not need to enter anything.
+2. Click Execute. The conversion process runs, and a summary of the purchase orders created appears.
+
+
+# Creating Purchase Orders Troubleshooting
+"No suitable requisition found": If you see this message when you click execute at the selection screen, it tells you that no new, unconverted requisitions are available in the system. In other words, there’s nothing new to order. Once a purchase order is created, the source requisitions are tagged with a completed status. You wouldn’t want old requisitions interfering with new ones in determining which items and what quantity should be ordered. Troubleshooting this message therefore is not a question of why didn’t it work, but rather a question of why you don’t have any requisitions. Did you or someone already run the transaction recently? Did you run the MRP process before you ran this transaction? Did the MRP Run generate any requisitions? Trace the process back far enough, and you will eventually find the answer.
+
+
+# Purchase Order Tracking
+You can use the inventory report to track when you have sufficient raw materials on hand to start creating production orders. However, in order to be more prepared, it is better to know when those materials will arrive, and the Purchase Order Tracking report will give you this information.
+
+
+# Purchase Order Tracking Report Column Descriptions
+- Order: The unique number assigned by the system to the purchase order. Note that since there are multiple items per order, a “blank” value indicates that this is another item on the same order as the previous one.
+- Vendor: Which supplier the order has been placed with, as identified by their code in the system. A “blank” value indicates this item is part of the same order as the previous one. A purchase order can only ever be for one vendor.
+- Material Description: The name of the item ordered.
+- Quantity: The amount ordered; in kg for food material, and by item count for packaging
+- Price: The purchase cost per price unit.
+- Price Unit: The amount ordered that is the basis for multiplying by the price to get the total cost. 1kg for food material, and per item for packaging.
+- Value: The total cost of the material amount ordered (Quantity/Price Unit) * Price
+- Status: The condition of the order, there are 3 different conditions:
+	1. Unconfirmed: The supplier (simulator) is yet to confirm that the order has 	been placed.
+	2. Expected: The supplier has confirmed the order and the materials have 	not yet been delivered.
+	3. Delivered: The materials have been delivered to your warehouse.
+- Goods (Expected Goods Delivery): 
+	- The simulation date on which the materials will arrive at your warehouse.	- "N.Sch": Indicates that no delivery date has been communicated yet.
+
+
+# Procurement Sourcing
+This report shows the price for each material by each vendor. This information will help with pricing decision of the finished products.
+
+
+# Procurement Sourcing Report Column Descriptions
+- Vendor: Which supplier sells this material, as identified by their code in 
+the system.
+- Material: The code of the item ordered.
+- Gross Price: The price set by the vendor for the given material.
+- Fixed: If there is an x, it means that the vendor has been selected as the supplier of that given product.
+- MRP: Here, there are 3 different options:
+	1. Purchase requisitions that are generate by MRP, are automatically assigned 	to this source of supply (vendor).
+	2. If the source of supply is a scheduling agreement, MRP can create a 	delivery schedule line with respect to a requirement. 
+	3. If the field is blank: The source of supply is not taken into account by 	MRP.
+
+
+# Financial Statements
+- In SAP, you can get current financial statements at any point in time during the simulation to get a snapshot of your financial situation. Transaction F.01 is used to display your financial statement.
+- The standard financial statement report provides you with the balance sheet and the income statement of your company. You can get more details on each section, down to individual account 
+balances, by clicking on the triangle on the left hand side of every item.
+- The net income line of the financial statement report corresponds to the cumulative profit (or loss) of your firm since the beginning of the game.
+- The financial statement report is a standard SAP transaction and has not been enhanced. It does not have a refresh button. To refresh the data, you will need to go back to the selection screen and execute again.
+
+
+# Steps for Finding Financial Statements
+1. In the “Company code” field, enter your company code (To find your company 
+code, refer to transaction ZORG).
+2. In GUI, towards the bottom of the screen (you may need to scroll down), under 
+“List In output” choose the ALV Tree Control option. In the Fiori Launchpad, input 
+SIM1 in “financial statement version”. 
+3. Click Execute. 
+4. If a warning message appears, dismiss it by clicking on Continue. 
+5. The financial statements appear.
+
+
+# Liquidity Planning
+The liquidity planning report will give you information about your cash balance and future inflows and outflows. It is organized by week (i.e., 5 virtual days), showing you the expected cash movements and balance for each week. You should consult the liquidity report before making any investment and financing decisions. You wouldn’t want to purchase plant and equipment, and then discover that you didn’t leave yourself enough cash to pay for a supplier delivery and have to extend your credit line (loan).
+
+
+# Columns Available in the Liquidity Planning Report
+- Exception: This traffic light indicator informs you of your cash situation and 
+trends:
+	- Red: Your cash balance, or predicted cash balance, is below zero.
+	- Yellow: The cash balance is positive, but trending down (more 
+	outflows than inflows).
+	- Green: The cash balance is positive, and stable or trending up.
+- Virtual Time: The end date of the week for which cash flows are summarized.
+- Customers: Accounts Receivable amounts that will be collected for the week.
+- Vendors: Accounts Payable amounts that will be paid for the week.
+- Marketing: Your marketing expenses for the week. You control these with 
+Marketing Expense Planning. 
+- Overheads: The fixed costs you will pay for the week. Only cash costs are included. Accounting costs such as depreciation do not affect your cash situation.
+- Interest: The amount you will pay in interest on your credit line (loan).
+- Closing Balance: The expected cash balance at the end of the week. It is the 
+closing balance from the previous week, plus the inflows, minus the outflows.

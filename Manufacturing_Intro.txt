@@ -1,0 +1,213 @@
+# Game Context
+- Single distribution channel: DC 12 (Grocery Chains).
+- Sell only from the central storage location (02), no regional storage locations.
+- Marketing enabled.
+- Modifying the BOM is not enabled, a default recipe for each product with 30% flavor content (10% more than the minimum required by MMA regulations) is set in the system. Standard costs and associated default pricing (cost + markup) are also set in the system.
+
+
+# Company Overview
+Your new company produces a range of pre-packaged muesli cereals at a factory in Germany, and makes them for sale to the local German market. On average you operate your firm for twenty working days out of each month, not working Weekends nor holidays. For reporting purposes, you also group each consecutive 5 days into a working “week”.
+
+
+# Game Overview
+- The game uses the round-by-round nature of the simulation to ease the students into the different aspects of the business process and associated transactions they must learn in order to operate their companies. 
+- Teams start with initial inventory in round 1 and will only focus on sales and distribution. In Round 2, production is added – teams transform their available stock of raw materials into finished product and keep on selling. Finally, in Round 3, procurement and planning are added, with teams adjusting their sales forecasts, and buying raw materials to keep on producing and selling. By the end of Round 3, teams will have learned the basic operational transactions of the entire manufacturing game.
+- The sales process will begin first becuase (i) it's the easiest to understand given that most people have at least a basic understanding of how pricing and marketing affect sales. And (ii) some data on customer demand needs to exist before intelligent decisions about demand forecasting can be made in the planning process.
+
+
+# Goal
+- Convert inventory into profit efficiently while learning demand patterns.
+- Minimize stockouts to maximize sales.
+
+
+# Grocery Chains/ Grocery Stores
+- Grocery Chains/ Grocery Stores are the main distribution channel for the muesli industry.
+- 17 stores in the West, 19 stores in the North, 23 stores in the South.
+- Payment time of Grocery Chains/ Grocery Stores: 10-20 days.
+- Approximate market revenue of Grocery Chains/ Grocery Stores: €360,000 per team per week.
+- Ordering behavior of Grocery Chains/ Grocery Stores: Buy 4 products at a time.
+
+
+# Suppilers, Lead Time, and Payment Time
+- Food Brokers Inc. is the only supplier of the raw materials (Wheat, oats, raisins, strawberries, blueberries, and nuts).
+- Continental Printing Co. is the only supplier of cardboard, plastic and printing.
+- Lead time of suppliers: 5 days.
+- Payment timeof suppliers: 20 days.
+
+
+# Storage Capacity and Storage Costs per additional 50,000 Units (Billed automatically)
+- Storage for finished products: capacity of 250,000 boxes, additional cost is 500€/day.
+- Storage for raw materials: capacity of 250,000 kg, additional cost is 1,000€/day.
+- Storage for packaging (bags and boxes): capacity of 750,000 units, additional cost is 100€/day.
+
+
+# Fixed Costs (Billed automatically each 5 days)
+- Labor: 10,000€
+- Manufacturing overhead: 7,500€
+- S, G & A: 20,000€
+- Deprecation (Building): 20,000€
+- Deprecation (Equipment): 33,333€
+
+
+# Marketing
+- Marketing in this game is used to persuate and convince consumers that your product is the one they should buy, hence increase their likelihood of buying your products.
+- Daily marketing budget can be set for each product in each area.
+- Particularly effective in the short term, as consumers do not have significant long term brand preferences or loyalty.
+- For marketing purposes, the German market is divided into 3 areas: 
+	- North: 
+		- Saxony
+		- Saxony Anhalt
+		- Brandenburg
+		- Berlin
+		- Mecklenburg Western
+		- Schleswig Holstein
+		- Hamburg
+		- Lower Saxony 
+		- Bremen
+	- South:
+		- Bavaria
+		- Baden Württemberg
+		- Hesse
+		- Thuringia
+	- West:
+		- North Rhine Westfalia
+		- Rhineland Palatinate
+		- Saarland
+- A marketing budget of twice the amount for one product over another has twice the influence on the buy decision for any given store. 
+
+
+# Business Process
+In each planning cycle, teams need to forecast the number of products the firm intends to sell. Production is planned based on the forecast. Material requirements are met by purchasing raw materials from the appropriate supplier. 
+
+
+# Activities involved in Business Processes (Listed below in an ordered way)
+- Forecasting: All companies in the simulation are using a make-to-stock approach. Therefore, the sales manager needs to forecast demand each period.
+- Production Planning: Based on the forecasted sales units for the next period, the planner then performs materials requirements planning, generating a production plan and a purchasing plan. 
+- Purchase Order Creation: From the purchasing plan, the purchasing manager contacts the suppliers of the products required. A formal purchase order is created and sent to the relevant suppliers.
+- Goods Receipt: Some time after each purchase order is sent, the materials will arrive at the factory. The receiving clerk checks that the goods delivered correspond to the purchase order and records a goods receipt, letting the warehouse know that the items can be put into storage and the rest of the company know that they are available for use. 
+- Invoice Receipt: An invoice for the ordered materials is sent to accounting and checked against both the purchase order and the goods receipt by an accounting clerk. The clerk then records the invoice in the accounts payable ledger, so that it can be Paid by the due date.
+- Outgoing Payment: Since the goods are payable upon an agreed term of payment, the accounting clerk carries out the transaction required to pay the supplier when it is time. A payment for the amount owed is made to the supplier. 
+- Production Order Release: Once all raw materials required for production are available, the production plan can be put into action. The production Controller reviews the plan, along with other information such as available inventory and decides what quantity of which product will be produced next. They create and release a production order to signal to the factory shop floor what to produce.
+- Production Execution and Confirmation: The raw materials required for production are transferred from the warehouse to the production line, and a goods issue is recorded to update inventory figures. Once the physical production run is complete, the production order is confirmed and the finished products are transferred from the production line to the warehouse. Once again to update inventory figures, a goods receipt is recorded. This lets the sales team know that this new inventory is now available for sale.
+- Sales Order Creation: Each day, several retailers will call your company to confirm pricing and availability. The company whose products best meet the needs of each store will secure the sale. If it is your company, then one of your Sales representatives will record a sales order.
+- Picking and Shipping: In response to seeing the new sales order, the warehouse will transfer the finished products to the shipping staging area where they will be prepared for transport, loaded and sent to the customer. Another goods issue is recorded to update inventory totals, and the sales order is updated as well. 
+- Invoicing: After shipment, accounting will prepare and send an invoice to the customer. The clerk then records the invoice in the accounts payable ledger, so that it can be tracked to ensure payment by the due date.
+- Incoming Payment:  Sometime after the invoice is received, the customer will transfer funds to pay for their order. Upon receipt of payment from the customer, the accounting clerk clears the customer account and records the deposit of the payment.
+
+
+# Interest payment and credit line renegotiation
+- Interest is accrued daily and will be charged automatically at the end of every week (5days).
+- If you don’t have a positive cash balance, your credit line will automatically be extended to cover any shortfall.
+
+
+# ompany Valuation
+- Company Valuation = Annual Profit / Discount Risk Rate
+- The value of your company is the present value of all future profit streams.
+- The more debt the company has, the more heavily those future profits are discounted to calculate their present value.
+
+
+# Quick-start Checklist
+- Review initial price list. 
+- Flag top 3-5 products by expected demand.
+- After first few steps, raise price on items with high sales; lower on items with low sales.
+- Document price modifications and their effects on the demand for the following steps.
+- Focus on the procurement and production of products that are selling well.
+
+
+# Tips and Tactics
+- Set proper product prices and make sure products are available as these are primary factors that affect revenue.
+- Do not run out of stock: There are 3 actions you can take to avoid running out of stock: reduce demand by increasing the price (short term solution), increase supply by initiating production (medium term solution, depending on whether you have the correct raw materials and production plan, and production backlog of other products) and increasing the supply by increasing the forecast for that product (long term solution).
+- Use small price changes (e.g., 1–5%) to steer demand smoothly.
+- Consumers do not change throughout the game, hence you may learn from their past behaviour.
+- Storage costs can quickly drain cash reserves. Make sure that you win enough sales to keep these costs under control.
+- Make sure you have the necessary cash when planning and establish a sustainable cycle of procurement, production and sales that generates enough cash to cover your operation and pay for the fixed costs including salaries, factory overheads such as electricity, and administrative expenses. Non-fixed costs such as depreciation will also affect your bottom line.
+- Try to avoid spending a lot of advertising money for two different products in the same geographic area. One euro spent on a product hurts the sale of the other and vice versa. (Globally, it's like a zero-sum game. If a firm increases advertising for one of its products, it attracts consumers away from other products in the same area, including your own).
+- Revisit marketing allocations only where stock is sufficient; remove marketing where stock is lacking.
+- If your company valuation increases from one round to the next, it is because you made good decisions that either improved profitability or reduced debt; If your company valuation decreases, it’s because your decisions were probably poor, reducing profitability or increasing risk.
+- Use the stock report to track the capacity utilization of your main warehouse, for each of the 3 material types (finished goods, raw materials, packaging).
+- Keep in mind that your customers want to buy 4 products at a time. You will need to consider your pricing strategy as a whole, rather than for each product in isolation. Pricing some products really high and others really low will probably stall your sales, as a competitor with more even sales prices may be able to offer the total sale at an overall lower cost, despite some of your prices being better than theirs.
+- Communicate and coordinate your activities with your team members. Delegate roles appropriately within your team.
+
+	
+# Appendix A. Products Characteristics
+## Names and Sizes
+- All products in the simulation have a code, name, and a size:
+	- F01: 500g Nuts Muesli
+	- F02: 500g Blueberry Muesli
+	- F03: 500g Strawberry Muesli
+	- F04: 500g Raisin Muesli
+	- F05: 500g Original Muesli
+	- F06: 500g Mixed Muesli
+	- F11: 1kg Nut Muesli
+	- F12: 1kg Blueberry Muesli
+	- F13: 1kg Strawberry Muesli
+	- F14: 1kg Raisin Muesli
+	- F15: 1kg Original Muesli
+	- F16: 1kg Mixed Muesli
+
+
+## Initial Selling Prices 
+- Products start with a default price in the system in euros. The price is the same for all distribution channels:
+	- F01: 3.90
+	- F02: 4.23
+	- F03: 4.23
+	- F04: 3.79
+	- F05: 3.77
+	- F06: 4.13
+	- F11: 4.61
+	- F12: 5.26
+	- F13: 5.27
+	- F14: 4.38
+	- F15: 4.35
+	- F16: 5.06
+
+
+## Initial Stock 
+30,000 units for each of the product.
+
+
+## Product Costs
+The unit cost of all products depends on the BOM, the price of the raw materials and packaging, and the allocation of the company’s fixed costs.
+
+
+# Appendix B. Round 1 - Sales and Marketing
+- To begin the game, each company has some inventory in stock of both finished goods and raw materials; already paid for. The factory equipment is installed and ready to go, and all staff hired and trained. You will need to pay wages, salaries and operating expenses, but have plenty of cash reserves in the bank to cover these as well as fund your marketing efforts. With no debt, you have a AAA+ credit rating, and therefore a discount risk rate of 10%. You cannot make any finance decisions, so with all companies having the same credit rating, you should place all your attention on maximizing your profit in order to maximize your company value.
+- In the 1st round, the task of each team is to focus on pricing and marketing to sell the existing inventory of finished products. You will start by selling just 8 of the 12 products. Later on, you will have an opportunity to choose your product mix among the full set of 12 products. 
+- Balance Sheet at the Start of Round 1:
+	- Assets: 
+		- Cash: 1,274,844€
+		- Receivables: 0€
+		- Inventory Raw materials: 375,056€
+		- Inventory Finished products: 350,100€
+		- Land: 500,000€
+		- Buildings: 1,500,000€
+		- Machinery and Equipmen: 16,000,000€
+	- Total assets: 20,000,000€
+	- Liabilities: 
+		- Bank Loan: 0€
+		- Accounts Payable: 0€
+	- Total liabilities: 0€
+	- Equity: 
+		- Common Stock: 20,000,000€
+	- Total equity: 20,000,000€
+
+
+## ppendix C. Round 2 - Production
+- By the end of Round 1, your initial stock of finished products has most likely depleted considerably. To be able to sustain sales, you must begin production. Prior to Round 1, a production plan was generated for you, and all the necessary raw materials required were bought and paid for. 
+- After Round 1, you will have a chance to review your performance, using reports in the system, as well as the results summary panel in the simulator. Your instructor will typically use both to debrief and provide guidance. An important report is the financial statement. This allows you to track your revenues and expenses at any time.
+- The simulator uses a simple formula to calculate your production capacity, which is: Units Produced per Day = Machinery and Equipment / 1,000. Regarding your balance sheet earlier, you have €16m invested in machinery and equipment. So your daily production capacity is 16,000 units.
+- Setup time is constant – switching products takes 8 hours. Effectively, you miss out on 5,333 units of production every time you switch. The boundaries between simulated days are not relevant to production. Daily production capacity is for a continuous 24 hours. If you create a Production Order, and first spend the 8 hours on setup time, the rest of the 16 hours will be spent on production. At the end of the day you will see 10,667 units of new stock available for sale tomorrow. Production of the remaining 5,333 units will take place in the next 8 hours, leaving 16 hours available for something else (10,667 units of the same product, or 8 hours of setup followed by 5,333 units of some other product).
+- You have 16 Planned Orders in the system, 2 for each of the 8 products. Each one is for exactly 16,000 units – one day’s production. A quick bit of mental arithmetic should tell you that’s only 16 days of production. With 20 days a round, you will be 4 days short, but that is without taking the setup time into consideration. If you switch products every day, you will spend a total of 120 (15 x 8) hours, or 5 days on setup and cleaning. So actually, you won’t be able to finish the entire production plan. To squeeze it all in, you’ll need to double up production runs of at least 3 products.
+- Hint: To maximize your productivity, you’re going to need to look for opportunities where you can produce the same product two days in a row, and delay the production of some other product.
+- Hint: The inventory report will be very useful in helping you to prioritize what to produce next. Items out of stock or with low stock should be produced first. Products with a lot of stock still available for sale, can be produced later.
+- Hint: Even though Round 2 introduces the production process, you still need to manage sales. Use pricing, marketing and production scheduling together to try to rebuild and maintain stocks of all 8 products. It will be even more important to have stock of finished products available for sale at the start of Round 3, since you will probably be out of raw materials having completed all of your production plan, and suppliers can take up to 5 days to deliver!
+
+
+# Appendix D. Round 3 - Planning and Procurement
+- NEW PRODUCTS AVAILABLE FOR ROUND 3: So far, you’ve only been making 4 products in 2 sizes, they are: F01, F02, F03, F04, F11, F12, F13, and F14. You can now consider all 6 products, with F05, F06, F15, and F16 added. Your production capacity is limited however, and trying to produce too many products requires a lot of switches and setup time reducing your productivity. To make one of the new products means you should drop one of the existing proucts. Keep in mind, that this is a simple introductory game meant for learning, and exploration is a major goal – so don’t overthink it. Also, you do not have to always make both sizes of one flavor.
+- By the end of Round 2, you should have converted all your planned orders, and used all your raw materials. To continue production, you need to buy more raw materials and create new planned orders.
+- Material Requirements Planning (MRP): To order more materials, you need to know how many kilograms of each material you need. That depends on 2 things – the finished product recipes and the number of finished products you plan to produce. Each of your products contains 30% of the key flavour ingredient, 35% oats and 35% wheat. So for 500g Nut Muesli you need 150g of nuts, 175g of oats and 175g of wheat for every unit to be produced. For the 1 kg version, you need 300g of nuts, 350g of oats and 350g of wheat per unit. You also need the correct size bag and box for each. While simple, this calculation is time consuming and you can imagine that for a company with thousands of materials and products, doing it by hand could take quite a while! Fortunately, the material requirements planning (MRP) function can do this calculation for you. You still need to determine how much of each product to produce though.
+- Sales Forecasting: Using the Market Report, you should analyze how much you've sold for each product at each of the 3 market areas and adjust the production plan accordingly. The total length, or quantity, of your production plan should remain the same – after all, your machines can’t produce any faster, you still need to think about setup time and the number of working days per round remains the same. In round 2 your production plan was for 16 days, with production runs of 1 day each. The system is configured to always create production runs (a single planned order) of exactly 1 day, so even if you plan for less it is going to round up. Rather than think about the exact quantity of each product to produce, you may find it simpler to decide how many days' production to commit to each product – should we forgo one day of production for 500g Blueberry Muesli in order to produce 1kg Nut Muesli for three days? Your sales forecasts can then be entered simply as multiples of your daily production capacity.
+- Running Material Requirements Planning (MRP): Previously, you entered a sales forecast in the system. While it may be easier to think about this in terms of production capacity and production runs, it isn’t actually a production plan but a prediction of what you will sell in the forthcoming period. You still need to generate a production plan based on this forecast. But what about inventory of finished goods that is still available for sale? The items you have available do not need to be produced and can be immediately sold to meet part of your sales forecast. Similarly, production runs that have been scheduled but are not finished, is product already planned and on the way, so can also be sold to meet part of your sales forecast. The SAP calculations take this into account. To generate your production plan, it will compare your forecast with your current inventory and incomplete production and only create planned orders where there is a shortfall. Keep in mind that each planned order is for exactly one day of production, so even if you are only 1,000 units short of your forecast, rather than sell less it is better to do another production run for a day. In this way, you plan to always have more than you need, but never excessively – never more than one days’ worth of production for each product.
+- Hint: Consider the warehouse capacity and cost when making your sales forecast. Not only do you need to consider how long it will take to complete all the production, but also how much space you will need to store all the raw materials that you will need purchase in advance. In general, it’s better to plan more often and avoid having extra warehousing costs.
+- Hint: Use Purchase Order Tracking Report to track what you have on order and what has been delivered.
